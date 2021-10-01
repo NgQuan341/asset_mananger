@@ -1,0 +1,49 @@
+
+POST  http://127.0.0.1:8001/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "name":"admin",
+    "email":"admin@gmail.com",
+    "password":"123456",
+    "confirm_password":"123456"
+}
+### Fake login
+POST  http://127.0.0.1:8001/api/fakelogin HTTP/1.1
+content-type: application/json
+
+{
+    "name":"admin",
+    "email":"admin@gmail.com",
+    "password":"123456",
+    "confirm_password":"123456"
+}
+###
+GET  http://127.0.0.1:8001/api/messages HTTP/1.1
+content-type: application/json
+
+{
+    "message":"nguyenquan",
+}
+###
+POST http://127.0.0.1:8001/api/chatting HTTP/1.1
+content-type: application/json
+
+{
+   
+    "message":"đầbuoi",
+}
+###
+POST http://127.0.0.1:8001/api/chat HTTP/1.1
+content-type: application/json
+
+{
+    "message":"đầbuoi",
+}
+###
+GET  http://127.0.0.1:8000/api/inbox HTTP/1.1
+content-type: application/json
+
+{
+    "message":"nguyenquan",
+}
